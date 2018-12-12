@@ -7,26 +7,53 @@
 </body>
 
 <script>
-    const ireland = ['Dublin', 'Galway', 'Cork'];
+    const ireland = ['São Paulo', 'Miami', 'New York'];
 
     const love = ireland.map(function(name) {
         return `I love ${name}!`;
     });
 
+    //removendo a palavra-chave function e adicionando a fat arrow ( => ) no lugar
     const loveArrow = ireland.map((name) => {
         return `I love ${name}!`;
     });
 
+    //Como só temos um parâmetro na nossa função, a sintaxe nos permite eliminar os parênteses:
     const loveArrowSingle = ireland.map(name => {
         return `I love ${name}!`;
     });
 
+     // se tiver só uma linha, não preciso das chaves e nem do return
     const loveArrowOneLine = ireland.map(name => `I love ${name}!`);
 
+    // posso encadear functions
     const loveChain = ireland
                         .filter(name => name === 'Dublin')
                         .map(name => `I love ${name}!`);
 
     console.log(loveChain);
+
+
+    let boasVindas = function(nome) {
+        return "Seja bem-vindo, " + nome;
+    }
+    console.log(boasVindas("Glauco"));
+
+    //removendo a palavra-chave function e adicionando a fat arrow ( => ) no lugar
+    let boasVindasArrow = (nome) => {
+        return "Seja bem-vindo, " + nome;
+    }
+    console.log(boasVindasArrow("Oliveira"));
+    //Como só temos um parâmetro na nossa função, a sintaxe nos permite eliminar os parênteses:
+
+    var boasVindasArrow2 = nome => {
+        return "Seja bem-vindo, " + nome;
+    }
+    console.log(boasVindasArrow2("Silva"));
+
+    // se tiver só uma linha, não preciso das chaves e nem do return
+    const boasVindasArro3 = nome => `Seja bem-vindo, ${nome}`;
+
+
 </script>
 </html>
