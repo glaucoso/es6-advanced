@@ -1,8 +1,4 @@
-### Arquivos das aulas do Módulo de ES6
 
-> Você pode encontrar esse curso na [Udemy](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOGIT)
-
-### Ementa do Módulo
 
 - 1 - Introdução ao ES6 (3:10)
 - 2.1 - Escopo do JS (3:57)
